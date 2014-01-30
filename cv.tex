@@ -1,0 +1,177 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+% \usepackage[T1]{fontenc}
+% \usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Peter Denton}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+% \def\footerlink{http://www.owlnet.rice.edu/\textasciitilde pbd1/}
+\def\footerlink{\null}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+colorlinks = true,
+urlcolor = black,
+pdfauthor = {\name},
+pdfkeywords = {physics, mathematics},
+pdftitle = {\name: Curriculum Vitae},
+pdfsubject = {Curriculum Vitae},
+pdfpagemode = UseNone
+}
+
+\geometry{
+body={6.5in, 9.7in},
+left=1.0in,
+top=0.9in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+\begin{list}{}{
+\setlength{\leftmargin}{1.5em}
+}
+}{
+\end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.1in}
+
+\begin{minipage}{0.45\linewidth}
+138 Village at Vanderbilt\\
+Nashville TN 37212
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+\begin{tabular}{ll}
+Phone: & (616) 450-0749\\
+Email: & \href{mailto:peterbd1@gmail.com}{\tt peterbd1@gmail.com} \\
+\end{tabular}
+\end{minipage}
+\subsection*{Education}
+\begin{itemize}
+\item Ph.D. Physics, Vanderbilt University (in progress).
+\item B.S. Physics, Rice University, 2010.
+\item B.A. Mathematics, Rice University, 2010.
+% \item Introduction to accelerator physics, United States Particle Accelerator School, 2009.
+% \item Multi-variable calculus, differential equations, Grand Rapids Community College, 2005-2006.
+\end{itemize}
+\subsection*{Honors and Awards}
+\begin{itemize}
+\item Division of Particles \& Fields travel grant to the APS April 2013 meeting.
+\item The Robert T. Lagemann Award for highest academic achievement by a first-year graduate student.
+\item ``Topping-up" McMinn Fellowship.
+\end{itemize}
+\subsection*{Employment}
+\begin{itemize}
+\item DOE funded RA with Dr. Weiler at Vanderbilt University, Spring 2011--Present.
+\item TA at Vanderbilt University, Fall 2010--Fall 2012.
+\item RA with Dr. Pantelides at Vanderbilt University, Summer--Fall 2010.
+\item Lee Teng Internship at Fermilab with Dr. Sen, Summer 2009.
+\item TA for the Physics Department at Rice University, Fall 2009.
+\item Bonner Labs at Rice University with Dr. Llope, Summer 2008.
+\item Writing consultant at Rice University, 2007--2010.
+% \item Grader for the Computational and Applied Mathematics department at Rice University, 2007--2008.
+\end{itemize}
+\subsection*{Research}
+Dr. Tom Weiler
+\begin{itemize}
+\item The possibility of cosmic rays producing black holes in the atmosphere.
+\item Cosmic ray anisotropy at the highest energies as seen through Pierre Auger Observator and JEM-EUSO.
+% \item Neutrino mixing and sources.
+\item Beyond the standard model contribution to dispersion integrals for $pp$ scattering at LHC energies.
+\end{itemize}
+Dr. Sokrates Pantelides
+\begin{itemize}
+\item DFT calculations of radiation effects of graphene.
+\end{itemize}
+Dr. Marj Corcoran
+\begin{itemize}
+\item Monte Carlo simulations looking for $CP$ violation in $WW\gamma$ decays.
+\end{itemize}
+Hulet Atom Cooling Group with Dr. Randy Hulet
+\begin{itemize}
+\item Design and construction of improved laser stabilization electronics.
+\end{itemize}
+Fermilab with Dr. Tanaji Sen
+\begin{itemize}
+\item Work on reconstructing the longitudinal phase space in the Main Injector and the Recycler.
+% \item Work on the Vlasov code base.
+\end{itemize}
+Bonner Labs with Dr. Bill Llope
+\begin{itemize}
+\item Testing and designing components for TOF for STAR at BNL.
+\item Confirming the long term accuracy of the calibration of electronics boards.
+\item Testing various improvements of PMT's.
+\end{itemize}
+\subsection*{Language Skills}
+\LaTeX, beamer, python, matplotlib, C++, ROOT, MATHEMATICA, MATLAB, FORTRAN, gnuplot, java, html, and javascript.
+\subsection*{Teaching}
+\begin{itemize}
+\item English, math, and physics at middle school, high school, undergraduate, and graduate school levels.
+% \item Grading and running help sessions for various physics courses.
+\item Teaching assistant for various freshman physics labs.
+\end{itemize}
+\section*{Professional Societies}
+\begin{itemize}
+\item Member, American Physical Society
+\end{itemize}
+% \subsection*{Graduate Courses Taken}
+% Mathematical methods, orders of magnitude, classical mechanics, statistical mechanics, advanced electrodynamics I \& II, quantum
+% mechanics I \& II, particle physics, QFT I, GR. To be completed: QFT II, cosmology.
+
+% \vspace*{.1in}
+% Footer
+% \begin{center}
+% \begin{footnotesize}
+% Updated: \today \\
+% \href{\footerlink}{\texttt{\footerlink}}
+% \end{footnotesize}
+% \end{center}
+\end{document}
