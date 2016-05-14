@@ -112,46 +112,72 @@ div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
 .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
 .abstract p {margin-left:5%; margin-right:5%;}
 div.abstract {width:100%;}
+.equation td{text-align:center; }
+.equation-star td{text-align:center; }
+table.equation-star { width:100%; }
+table.equation { width:100%; }
+table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:100%; margin-left:5%; white-space: nowrap;}
+table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+td.align-label { width:5%; text-align:center; }
+td.align-odd { text-align:right; padding-right:0.3em;}
+td.align-even { text-align:left; padding-right:0.6em;}
+table.multline, table.multline-star {width:100%;}
+td.gather {text-align:center; }
+table.gather {width:100%;}
+div.gather-star {text-align:center;}
 /* end css.sty */
 
+*
+{
+margin: 0px auto;
+}
+html, body
+{
+height: 100%;
+}
 body
 {
 background-color: #E6E6E6;
 color: #000050;
 font-family: arial;
 font-size: 150%;
-padding: 10px 10%;
 }
 
-#container
+.center
 {
-min-height: 100%;
-position: relative;
+text-align: center;
+}
+.hpadded
+{
+padding-left: 100px;
+padding-right: 100px;
+}
+.vpadded
+{
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
 #header
 {
 padding-bottom: 10px;
-text-align: center;
 }
 
-#body
+#name
 {
-padding-bottom: 50px;
-text-align: center;
+padding: 25px 0px 25px;
 }
 
-#footer
+#container
 {
-clear: both;
-position: absolute;
-bottom: 0;
+min-height: 100%;
+margin: 0 auto -70px;
+}
 
-left: 0;
-right: 0;
-text-align: center;
-
-height: 40px;
+#footer, #push
+{
+height: 60px;
+padding-top: 10px
 }
 
 a:link
@@ -183,44 +209,57 @@ list-style-type:none;
 padding:0;
 margin:5px 20px;
 }
+*
+{
+margin: 0px auto;
+}
+html, body
+{
+height: 100%;
+}
 body
 {
 background-color: #E6E6E6;
 color: #000050;
 font-family: arial;
 font-size: 150%;
-padding: 10px 10%;
 }
 
-#container
+.center
 {
-min-height: 100%;
-position: relative;
+text-align: center;
+}
+.hpadded
+{
+padding-left: 100px;
+padding-right: 100px;
+}
+.vpadded
+{
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
 #header
 {
 padding-bottom: 10px;
-text-align: center;
 }
 
-#body
+#name
 {
-padding-bottom: 50px;
-text-align: center;
+padding: 25px 0px 25px;
 }
 
-#footer
+#container
 {
-clear: both;
-position: absolute;
-bottom: 0;
+min-height: 100%;
+margin: 0 auto -70px;
+}
 
-left: 0;
-right: 0;
-text-align: center;
-
-height: 40px;
+#footer, #push
+{
+height: 60px;
+padding-top: 10px
 }
 
 a:link

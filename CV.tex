@@ -1,10 +1,17 @@
 \documentclass[letterpaper]{article}
 
+\makeatletter
+\newif\ifhtlatex
+\@ifpackageloaded{tex4ht}{\htlatextrue}{\htlatexfalse}
+\makeatother
+
+\usepackage{amsmath}
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{colorlinks=false,pdfborder={0 0 0}}
 
 \def\name{Peter B.~Denton}
+\title{CV}
 
 \pagestyle{myheadings}
 \markright{\name}
@@ -25,6 +32,10 @@
 }
 
 \begin{document}
+
+\ifhtlatex
+\Tag{TITLE+}{CV}
+\fi
 
 {\huge \name}
 
