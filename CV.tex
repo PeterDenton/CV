@@ -6,7 +6,10 @@
 \makeatother
 
 \usepackage{amsmath}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.93in]{geometry}
+\usepackage{graphicx}
+\usepackage{calc}
+
 \usepackage{hyperref}
 \hypersetup{colorlinks=false,pdfborder={0 0 0}}
 
@@ -26,11 +29,8 @@
 
 \renewenvironment{itemize}{
 \begin{list}{}{
-\setlength{\leftmargin}{1.5em}
-}
-}{
-\end{list}
-}
+\setlength{\leftmargin}{.5em}}}{
+\end{list}}
 
 \begin{document}
 
@@ -38,15 +38,16 @@
 \Tag{TITLE+}{CV}
 \fi
 
-{\huge \name}
-
-\vspace{0.1in}
-
+% \includegraphics[width=1.2in]{face_cropped}
+% \parbox{\textwidth-1.3in}{\vspace*{-1.1in}
+{\huge \name}\\
+\vspace*{0.1in}
 \begin{tabular}{ll|l|ll}
-Phone: & +45 71 49 29 40 & Gernersgade 35, 1 th & Updated: & \today\\
-Email: & \href{mailto:peterbd1@gmail.com}{\tt peterbd1@gmail.com} & Copenhagen K 1319 & Website: & 
++45 71 49 29 40 & Gernersgade 35, 1 th & Updated: & \today\\
+\href{mailto:peterbd1@gmail.com}{\tt peterbd1@gmail.com} & Copenhagen K 1319 & Website: & 
 \href{http://peterdenton.github.io}{\tt peterdenton.github.io}
 \end{tabular}
+% }
 
 \subsection*{Research Experience}
 \begin{itemize}
@@ -61,7 +62,7 @@ Email: & \href{mailto:peterbd1@gmail.com}{\tt peterbd1@gmail.com} & Copenhagen K
 \subsection*{Research Interests}
 \begin{itemize}
 \item SM and BSM neutrino theory.
-\item High energy astroparticle physics: UHECRs, neutrinos, anisotropies.
+\item High energy astroparticle physics: neutrinos, UHECRs, anisotropies.
 % \item Cosmic ray and neutrino anisotropy searches.
 % \item Novel BSM searches at the LHC.
 \end{itemize}
